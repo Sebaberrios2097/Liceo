@@ -1,0 +1,190 @@
+.car-fondo {
+    background: #fff1e6;
+}
+
+.car-fondo-mat {
+    background: #fff1e6;
+    margin-top: 84px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.nav-logo {
+    width: 100px;
+    padding: 10px 0;
+}
+
+.navbar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.navbar-collapse {
+    height: 136px;
+}
+
+.pad-cent {
+    padding: 0 50px;
+}
+
+.nav-btn {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 136px;
+    padding: 55px 20px;
+    font-size: large;
+}
+
+.nav-btn-inicio {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 136px;
+    padding: 55px 20px;
+    background-color: #343638;
+}
+
+.nav-btn:hover {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 136px;
+    padding: 55px 20px;
+    background-color: #343638;
+}
+
+.text-white {
+    color: #fff;
+    text-align: center;
+}
+
+.form-group {
+    padding-top: 1.1rem;
+    width: -webkit-fill-available;
+}
+
+.text-area {
+    resize: none;
+    height: 150px;
+    width: 100%;
+}
+
+.pie-pagina {
+    background: black;
+    color: #fff;
+}
+
+.pie-30 {
+    width: 30%;
+    max-width: 320px;
+    margin-left: 20%;
+    padding-bottom: 1%;
+    display: inline-block;
+}
+
+.icon {
+    margin-right: 25px;
+}
+
+.imagen-noticia {
+    margin-left: 285px;
+    margin-bottom: 10px;
+    border-radius: 10%;
+}
+
+.news-txt {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+
+.p-noticia {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.calendar {
+    width: 800px;
+    height: 587px;
+}
+
+.mapa {
+    margin-top: 85px;
+    background: none;
+    border: none;
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+@media(max-width: 1000px) {
+    .calendar {
+        width: 355px;
+        height: 425px;
+    }
+    .imagen-noticia {
+        margin-left: 0px;
+        width: 350px;
+        border-radius: 5%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 100%;
+        height: auto;
+    }
+    .pie-30 {
+        width: 70%;
+        max-width: 320px;
+        margin-left: 15%;
+        padding-bottom: 2%;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-brand.abs {
+        position: absolute;
+        width: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+}
+
+@media(max-width: 500px) {
+    .calendar {
+        width: 355px;
+        height: 425px;
+    }
+    .imagen-noticia {
+        margin-left: 0px;
+        width: 350px;
+        border-radius: 5%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 100%;
+        height: auto;
+    }
+    .pie-30 {
+        width: 70%;
+        max-width: 320px;
+        margin-left: 15%;
+        padding-bottom: 2%;
+    }
+}
+
+@media(max-width: 376px) {
+    .calendar {
+        width: 355px;
+        height: 425px;
+    }
+    .imagen-noticia {
+        margin-left: 0px;
+        width: 350px;
+        border-radius: 5%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 100%;
+        height: auto;
+    }
+    .pie-30 {
+        width: 70%;
+        max-width: 320px;
+        margin-left: 15%;
+        padding-bottom: 2%;
+    }
+}
