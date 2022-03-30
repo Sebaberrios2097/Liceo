@@ -199,18 +199,19 @@
                         <div class="formulario__grupo" id="grupo__mensaje">
                             <label for="mensaje" class="formulario__label">Mensaje</label>
                             <div class="formulario__grupo-input">
-                                <textarea class="form-group" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                                <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                                <input type="text" class="formulario__input" name="mensaje" id="mensaje">
                             </div>
                             <p class="formulario__input-error ">Escriba un mensaje valido</p>
                         </div>
 
-                        <div class="formulario__mensaje " id="formulario__mensaje ">
+                        <div class="formulario__mensaje" id="formulario__mensaje">
                             <p><i class="fa-solid fa-triangle-exclamation "></i> <b>Error: </b> Por favor rellene el formulario correctamente. </p>
                         </div>
 
                         <div class="formulario__grupo formulario__grupo-btn-enviar ">
                             <button type="submit " class="formulario__btn ">Enviar</button>
-                            <p class="formulario__mensaje-exito " id="formulario__mensaje-exito ">Formulario enviado exitosamente
+                            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente
                             </p>
                         </div>
                     </form>
