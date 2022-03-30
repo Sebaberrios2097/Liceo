@@ -320,6 +320,7 @@ body {
     .calendar {
         width: 355px;
         height: 425px;
+        margin-left: -25px;
     }
     .imagen-noticia {
         margin-left: 0px;
