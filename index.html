@@ -30,16 +30,13 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-btn" href="#"><span
-                                class="fa-solid fa-align-center"></span>&nbspMatriculate</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-btn" href="#"><span class="fa fa-images"></span> &nbspGalería</a>
+                                class="fa-solid fa-align-center"></span> Matriculate</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-btn" href="#"><span class="fa fa-align-left"></span> Cursos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-btn" href="#news"><span class="fa fa-newspaper"></span>&nbspNoticias</a>
+                        <a class="nav-link nav-btn" href="#news"><span class="fa fa-newspaper"></span> Noticias</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link nav-btn dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="fa fa-people-group"></span>&nbspSobre nosotros</a></a>
@@ -59,60 +56,24 @@
             <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link nav-btn" href="#">Link</a>
+                        <a class="nav-link nav-btn" href="#"><span class="fa fa-images"></span> Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-btn" href="#">Lorem</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Carrusel -->
-    <div class="container-fluid car-fondo ">
-        <div class="card-body col-md-8 offset-md-2 ">
-            <div id="demo " class="carousel slide " data-bs-ride="carousel ">
-
-                <!-- Indicators/dots -->
-                <div class="carousel-indicators ">
-                    <button type="button " data-bs-target="#demo " data-bs-slide-to="0 " class="active "></button>
-                    <button type="button " data-bs-target="#demo " data-bs-slide-to="1 "></button>
-                    <button type="button " data-bs-target="#demo " data-bs-slide-to="2 "></button>
-                </div>
-
-                <!-- The slideshow/carousel -->
-                <div class="carousel-inner ">
-                    <div class="carousel-item active ">
-                        <img src="img/Colegio.jpg " alt="Los Angeles " class="d-block " style="width:100% ">
-                        <div class="carousel-caption ">
-                            <h3>Los Angeles</h3>
-                            <p>We had such a great time in LA!</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item ">
-                        <img src="img/Colegio2.jpg " alt="Chicago " class="d-block " style="width:100% ">
-                        <div class="carousel-caption ">
-                            <h3>Chicago</h3>
-                            <p>Thank you, Chicago!</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item ">
-                        <img src="img/Colegio3.jpg " alt="New York " class="d-block " style="width:100% ">
-                        <div class="carousel-caption ">
-                            <h3>New York</h3>
-                            <p>We love the Big Apple!</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Left and right controls/icons -->
-                <button class="carousel-control-prev " type="button " data-bs-target="#demo " data-bs-slide="prev ">
-                    <span class="carousel-control-prev-icon "></span>
-                </button>
-                <button class="carousel-control-next " type="button " data-bs-target="#demo " data-bs-slide="next ">
-                    <span class="carousel-control-next-icon "></span>
-                </button>
-            </div>
+    <!-- Mensaje portada -->
+    <div class="container-fluid col-md-6 portada">
+        <div class="container portada-msg bg-dark">
+            <h1>Bienvenido a Liceo KRÜ</h1>
+            <p>- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, fuga.-</p>
         </div>
     </div>
+
 
     <!-- Sección noticias-->
     <div id="news" class="container-fluid car-fondo">
@@ -135,40 +96,76 @@
     </div>
 
     <!-- Mensaje -->
-    <div class="container-fluid col-md-3 cont-inter">
-        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff1e6" fill-opacity="1" d="M0,96L0,128L288,128L288,160L576,160L576,32L864,32L864,96L1152,96L1152,64L1440,64L1440,0L1152,0L1152,0L864,0L864,0L576,0L576,0L288,0L288,0L0,0L0,0Z"></path></svg>
-        <div class="container cont-msg-inter">
-            <h1>"Somos entero bacanes"</h1>
-            <p>- Küm de abuelo -</p>
+    <div class="container-fluid col-md-8 cont-inter">
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/Colegio.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+                    <div class="carousel-caption">
+                        <h3>Los Angeles</h3>
+                        <p>We had such a great time in LA!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Colegio2.jpg" alt="Chicago" class="d-block" style="width:100%">
+                    <div class="carousel-caption">
+                        <h3>Chicago</h3>
+                        <p>Thank you, Chicago!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Colegio3.jpg" alt="New York" class="d-block" style="width:100%">
+                    <div class="carousel-caption">
+                        <h3>New York</h3>
+                        <p>We love the Big Apple!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
         </div>
     </div>
 
 
     <!-- Calendario -->
-    <div class="container-fluid car-fondo" id="calendar ">
-        <br>
-        <div class="container-fluid ">
-            <div class="container-fluid container-md text-center ">
-                <h2>Fechas importantes</h2>
-                <iframe class="calendar " src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FSantiago&src=YmVycmlvcy5zZWJhc3RpYW4yMDAxQGdtYWlsLmNvbQ&src=MjcxcTB1cGZzM3BvZ29jYmRoMjRmdnNraTk5YWpkNmxAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&src=ZXMuY2wjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%238E24AA&color=%237986CB "></iframe>
-            </div>
+    <div class="container-fluid car-fondo">
+        <div class="container col-md-6">
+            <h2 class="text-center">Fechas importantes</h2>
+            <iframe class="calendar " src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FSantiago&src=YmVycmlvcy5zZWJhc3RpYW4yMDAxQGdtYWlsLmNvbQ&src=MjcxcTB1cGZzM3BvZ29jYmRoMjRmdnNraTk5YWpkNmxAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&src=ZXMuY2wjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%238E24AA&color=%237986CB "></iframe>
         </div>
-        <br /><br /><br />
     </div>
+
 
     <!-- Contacto y mapa -->
     <div class="container-fluid car-fondo" id="contact ">
         <br>
-        <div class="container-fluid container-md ">
+        <div class="container-fluid container-md">
             <div class="row ">
-                <div class="container col-md-6">
+                <div class="container col-md-6 cont-contacto">
+                    <h1 class="text-center">Contáctanos</h1>
                     <form action="" classs="formulario" id="formulario">
                         <!-- Grupo nombre -->
                         <div class="formulario__grupo" id="grupo__nombre">
-                            <label for="nombre" class="formulario__label">Nombre</label>
+                            <label for="nombre" class="formulario__label">Nombres</label>
                             <div class="formulario__grupo-input">
                                 <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
-                                <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Pedro">
+                                <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="ej. Pedro Sánchez">
                             </div>
                             <p class="formulario__input-error ">El nombre solo puede tener letras</p>
                         </div>
@@ -178,7 +175,7 @@
                             <label for="correo" class="formulario__label">Correo</label>
                             <div class="formulario__grupo-input">
                                 <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
-                                <input type="email" class="formulario__input" name="correo" id="correo" placeholder="asdkajs@gmail.com">
+                                <input type="email" class="formulario__input" name="correo" id="correo" placeholder="ej. pe.sanchez@gmail.com">
 
                             </div>
                             <p class="formulario__input-error ">Escriba un correo valido</p>
@@ -189,7 +186,7 @@
                             <label for="asunto" class="formulario__label">Asunto</label>
                             <div class="formulario__grupo-input">
                                 <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
-                                <input type="text" class="formulario__input" name="asunto" id="asunto">
+                                <input type="text" class="formulario__input" name="asunto" id="asunto" placeholder="ej. Matrícula">
 
                             </div>
                             <p class="formulario__input-error "></p>
@@ -222,12 +219,12 @@
                 </div>
                 <div class="container col-md-6 ">
                     <br /><br /><br />
-                    <div class="card-body">
+                    <div class="cont-mapa">
                         <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2365.176310676158!2d-71.5347254495002!3d-33.0337023530662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689de64d74fd4af%3A0x8004f381e9055a38!2sDuoc%20UC%3A%20Sede%20Vi%C3%B1a%20Del%20Mar!5e0!3m2!1ses-419!2scl!4v1648421728407!5m2!1ses-419!2scl "
                             width="315 " height="300 " style="border:0; " allowfullscreen=" " loading="lazy " referrerpolicy="no-referrer-when-downgrade "></iframe>
                         <br><br>
                         <div class="card ">
-                            <div class="card-body ">
+                            <div class="card-body text-center">
                                 <h5><span class="fa fa-location-dot "></span>&nbspCalle Álvarez con Lusitania</h5>
                                 <h5><span class="fa fa-phone "></span>&nbsp+568 9856 2145</h5>
                                 <h5><span class="fa fa-envelope "></span>&nbspliceo.pretson@pretson.cl</h5>

@@ -5,8 +5,22 @@ body {
     background-size: cover;
 }
 
+.portada {
+    opacity: 90%;
+    border-radius: 3%;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    color: #fff;
+}
+
+.portada-msg {
+    padding: 50px;
+}
+
 .car-fondo {
     background: #fff1e6;
+    padding: 20px 0px;
 }
 
 .car-fondo-mat {
@@ -47,6 +61,11 @@ body {
 .text-white {
     color: #fff;
     text-align: center;
+}
+
+.cont-inter {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .cont-msg-inter {
@@ -113,6 +132,8 @@ body {
 .calendar {
     width: 800px;
     height: 587px;
+    margin-left: -40px;
+    margin-top: 20px
 }
 
 .formulario {
@@ -211,8 +232,13 @@ body {
 }
 
 .formulario__mensaje-exito {
-    font-size: 14px;
-    color: #119200;
+    height: 45px;
+    line-height: 45px;
+    background: #60f667;
+    padding: 0 15px;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: none;
 }
 
@@ -242,14 +268,31 @@ body {
 }
 
 .mapa {
-    margin-top: 85px;
+    padding-top: 20px;
     background: none;
     border: none;
     text-align: center;
+    margin-left: 100px;
+    width: 28em;
+    height: 22em;
 }
 
 .text-center {
     text-align: center;
+}
+
+.cont-contacto {
+    border-radius: 5%;
+    background-color: #DFDFDE;
+    height: 35em;
+    padding: 20px;
+}
+
+.cont-mapa {
+    border-radius: 5%;
+    background-color: #DFDFDE;
+    height: 35em;
+    margin-top: -70px;
 }
 
 
