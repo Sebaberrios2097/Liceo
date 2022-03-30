@@ -41,13 +41,6 @@ body {
     font-size: large;
 }
 
-.nav-btn-inicio {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    height: 136px;
-    padding: 55px 20px;
-    background-color: #343638;
-}
-
 .nav-btn:hover {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     height: 136px;
@@ -62,6 +55,19 @@ body {
 
 .cont-msg-inter {
     background-color: gray;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10%;
+    opacity: 80%;
+    margin-bottom: 40px;
+}
+
+.cont-msg-inter>h1 {
+    color: #fff;
+}
+
+.cont-msg-inter>p {
+    color: #fff;
 }
 
 .form-group {
