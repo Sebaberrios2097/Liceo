@@ -1,3 +1,14 @@
+body {
+    background-image: url(../img/nguyen-khanh-ly-liiusuaISP0-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.wave {
+    margin: 0 -12px;
+}
+
 .car-fondo {
     background: #fff1e6;
 }
@@ -47,6 +58,10 @@
 .text-white {
     color: #fff;
     text-align: center;
+}
+
+.cont-msg-inter {
+    background-color: gray;
 }
 
 .form-group {
@@ -305,6 +320,7 @@
     .calendar {
         width: 355px;
         height: 425px;
+        margin-left: -25px;
     }
     .imagen-noticia {
         margin-left: 0px;

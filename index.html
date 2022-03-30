@@ -41,6 +41,13 @@
                     <li class="nav-item">
                         <a class="nav-link nav-btn" href="#news"><span class="fa fa-newspaper"></span>&nbspNoticias</a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link nav-btn dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="fa fa-people-group"></span>&nbspSobre nosotros</a></a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Misión y Visión</a></li>
+                            <li><a class="dropdown-item" href="#">Reglamento Escolar</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
             <div class="mx-auto order-0">
@@ -51,9 +58,6 @@
             </div>
             <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link nav-btn" href="#">Right</a>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link nav-btn" href="#">Link</a>
                     </li>
@@ -111,7 +115,7 @@
     </div>
 
     <!-- Sección noticias-->
-    <div id="news" class="container-fluid " style="background-color: #f7e1d0; ">
+    <div id="news" class="container-fluid car-fondo">
         <div class="container-fluid ">
             <h1 class="news-txt "><span class="fa fa-newspaper "></span> Noticia destacada de la semana</h1>
             <div class="container ">
@@ -130,8 +134,17 @@
         </div>
     </div>
 
+    <div class="container-fluid cont-inter">
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff1e6" fill-opacity="1" d="M0,96L0,128L288,128L288,160L576,160L576,32L864,32L864,96L1152,96L1152,64L1440,64L1440,0L1152,0L1152,0L864,0L864,0L576,0L576,0L288,0L288,0L0,0L0,0Z"></path></svg>
+        <div class="container cont-msg-inter">
+            <h1>Somos entero bacanes</h1>
+            <p>Küm de abuelo</p>
+        </div>
+    </div>
+
+
     <!-- Calendario -->
-    <div class="container-fluid " id="calendar " style="background-color: #e0c7b4; ">
+    <div class="container-fluid car-fondo" id="calendar ">
         <br>
         <div class="container-fluid ">
             <div class="container-fluid container-md text-center ">
@@ -143,7 +156,7 @@
     </div>
 
     <!-- Contacto y mapa -->
-    <div class="container-fluid " id="contact " style="background-color: #c7af9c; ">
+    <div class="container-fluid car-fondo" id="contact ">
         <br>
         <div class="container-fluid container-md ">
             <div class="row ">
@@ -156,7 +169,7 @@
                                 <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
                                 <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Pedro">
                             </div>
-                            <p class="formulario__input-error">El nombre solo puede tener letras</p>
+                            <p class="formulario__input-error ">El nombre solo puede tener letras</p>
                         </div>
 
                         <!-- Grupo correo -->
@@ -167,7 +180,7 @@
                                 <input type="email" class="formulario__input" name="correo" id="correo" placeholder="asdkajs@gmail.com">
 
                             </div>
-                            <p class="formulario__input-error">Escriba un correo valido</p>
+                            <p class="formulario__input-error ">Escriba un correo valido</p>
                         </div>
 
                         <!-- Grupo asunto -->
@@ -178,7 +191,7 @@
                                 <input type="text" class="formulario__input" name="asunto" id="asunto">
 
                             </div>
-                            <p class="formulario__input-error"></p>
+                            <p class="formulario__input-error "></p>
                         </div>
 
                         <!-- Grupo mensaje -->
@@ -187,16 +200,16 @@
                             <div class="formulario__grupo-input">
                                 <textarea class="form-group" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
                             </div>
-                            <p class="formulario__input-error">Escriba un mensaje valido</p>
+                            <p class="formulario__input-error ">Escriba un mensaje valido</p>
                         </div>
 
-                        <div class="formulario__mensaje" id="formulario__mensaje">
-                            <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error: </b> Por favor rellene el formulario correctamente. </p>
+                        <div class="formulario__mensaje " id="formulario__mensaje ">
+                            <p><i class="fa-solid fa-triangle-exclamation "></i> <b>Error: </b> Por favor rellene el formulario correctamente. </p>
                         </div>
 
-                        <div class="formulario__grupo formulario__grupo-btn-enviar">
-                            <button type="submit" class="formulario__btn">Enviar</button>
-                            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente
+                        <div class="formulario__grupo formulario__grupo-btn-enviar ">
+                            <button type="submit " class="formulario__btn ">Enviar</button>
+                            <p class="formulario__mensaje-exito " id="formulario__mensaje-exito ">Formulario enviado exitosamente
                             </p>
                         </div>
                     </form>
