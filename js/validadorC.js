@@ -5,7 +5,7 @@ const expresiones = {
     nombre: /^[a-á-zA-ZÀ-ÿ\s]{3,40}$/, // Letras y espacios, pueden llevar acentos.
     correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
     asunto: /^[a-á-zA-ZÀ-ÿ-\d]{1,20}$/,
-    mensaje: /^[a-á-zA-ZÀ-ÿ\d]{7,200}$/
+    mensaje: /^[a-zA-Z0-9 ]{3,200}$/
 }
 
 const campos = {

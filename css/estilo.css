@@ -5,10 +5,6 @@ body {
     background-size: cover;
 }
 
-.wave {
-    margin: 0 -12px;
-}
-
 .car-fondo {
     background: #fff1e6;
 }
@@ -313,15 +309,6 @@ body {
     }
 }
 
-@media (max-width: 376px) {
-    .formulario {
-        width: 20px;
-    }
-    .formulario__btn {
-        width: 100%;
-    }
-}
-
 @media(max-width: 376px) {
     .calendar {
         width: 355px;
@@ -342,5 +329,17 @@ body {
         max-width: 320px;
         margin-left: 15%;
         padding-bottom: 2%;
+    }
+    .formulario {
+        width: 20px;
+    }
+    .formulario__btn {
+        width: 100%;
+    }
+    .mapa {
+        margin-top: 25px;
+        background: none;
+        border: none;
+        margin-left: -10px;
     }
 }
