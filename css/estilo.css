@@ -380,9 +380,11 @@ body {
         width: 100%;
     }
     .mapa {
+        width: 20em;
+        height: 20em;
         margin-top: 25px;
         background: none;
         border: none;
-        margin-left: -10px;
+        margin-left: 15px;
     }
 }
