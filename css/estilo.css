@@ -294,6 +294,16 @@ body {
     height: 35em;
     margin-top: -70px;
 }
+.inicio-sesion{
+    background-color: #343638;
+    color: #fff;
+    padding: 20px;
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+}
+.btn-inicio-sesion{
+    display: block;
+}
 
 
 /* Mediaqueris */
