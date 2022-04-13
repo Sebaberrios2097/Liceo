@@ -28,21 +28,14 @@
                         <a class="nav-link nav-btn" href="index.html"><span class="fa fa-house"></span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-btn" href="#"><span
+                        <a class="nav-link nav-btn" href="matricula.html"><span
                                 class="fa-solid fa-align-center"></span> Matriculate</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-btn" href="#"><span class="fa fa-align-left"></span> Fechas importantes</a>
+                        <a class="nav-link nav-btn" href="index.html#news"><span class="fa fa-newspaper"></span> Noticias</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-btn" href="#news"><span class="fa fa-newspaper"></span> Noticias</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link nav-btn dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="fa fa-people-group"></span>&nbspSobre nosotros</a></a>
-                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Misión y Visión</a></li>
-                            <li><a class="dropdown-item" href="#">Reglamento Escolar</a></li>
-                        </ul>
+                        <a class="nav-link nav-btn" href="index.html#fecha"><span class="fa far fa-calendar"></span> Fechas importantes</a>
                     </li>
                 </ul>
             </div>
@@ -54,11 +47,18 @@
             </div>
             <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link nav-btn" href="#"><span class="fa fa-images"></span> Galería</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link nav-btn dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="fa fa-people-group"></span> Sobre nosotros</a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Misión y Visión</a></li>
+                            <li><a class="dropdown-item" href="#">Reglamento Escolar</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-btn" href="#">Lorem</a>
+                        <a class="nav-link nav-btn" href="index.html#carrusel"><span class="fa fa-images"></span> Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-btn" href="iniciosesion.html"><span class="fa fa-circle-user"></span> Iniciar Sesión</a>
                     </li>
                 </ul>
             </div>
@@ -66,107 +66,86 @@
     </nav>
 
     <!-- Matricula -->
-    <form action="#">
-        <div class="car car-fondo-mat">
-            <div class="car-body">
-                <div class="col-md-6 offset-3">
-                    <div class="card">
-                        <div class="card-header bg-dark">
-                            <h2 class="text-white">Datos de matrícula</h2>
-                        </div>
-                        <div id="Datos-alumno" class="card-body">
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <span>Nombres:</span>
-                                        <input type="text" required placeholder="ej. Sebastián Alexander" class="form-control" pattern="[A-Za-z].{1,}" title="Solo letras">
-                                    </div>
-                                    <div class="col-6">
-                                        <span>Apellidos:</span>
-                                        <input type="text" required placeholder="ej. Berríos González" class="form-control" pattern="[A-Za-z].{1,}" title="Solo letras">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <span>Run:</span>
-                                        <input type="text" required placeholder="ej. 20.587.125-6" class="form-control">
-                                    </div>
-                                    <div class="col-6">
-                                        <span>Fecha de nacimiento:</span>
-                                        <input type="date" required class="form-control" min="2000-01-01">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <span>Correo:</span>
-                                        <input type="email" required placeholder="ej. seb.berrios@gmail.com" class="form-control">
-                                    </div>
-                                    <div class="col-6">
-                                        <span>Teléfono:</span>
-                                        <input type="tel" required placeholder="ej. +56 9 5896 2144" class="form-control">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <span>Colegio previo:</span>
-                                        <input type="text" required placeholder="ej. Escuela Alemania" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <span>Motivo de ingreso:</span>
-                                            <textarea class="text-area form-control" placeholder="Escriba el motivo..."></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <span>Nombres Apoderado:</span>
-                                        <input type="text" required placeholder="ej. Sebastián Alexander" class="form-control" pattern="[A-Za-z].{1,}" title="Solo letras">
-                                    </div>
-                                    <div class="col-6">
-                                        <span>Apellidos Apoderado:</span>
-                                        <input type="text" required placeholder="ej. Berríos González" class="form-control" pattern="[A-Za-z].{1,}" title="Solo letras">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <span>Run Apoderado:</span>
-                                        <input type="text" required placeholder="ej. 20.587.125-6" class="form-control">
-                                    </div>
-                                    <div class="col-6">
-                                        <span>Correo Apoderado:</span>
-                                        <input type="email" required placeholder="ej. seb.berrios@gmail.com" class="form-control">
-                                    </div>
-                                </div>
-                            </div>
-                            <br>
-                            <button type="submit" class="btn btn-primary"><span class="fa fa-share"></span>Enviar matrícula</button>
-                        </div>
+    <form action="">
+        <div class="container cont-forms col-md-6">
+            <h1 class="text-center">Matrícula</h1>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="nomAlumno">Nombres Alumno</label>
+                        <input type="text" class="form-control" placeholder="Ingrese Nombre" id="nomAlumno">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="apAlumno">Apellidos Alumno</label>
+                        <input type="text" class="form-control" placeholder="Ingrese apellidos" id="apAlumno">
                     </div>
                 </div>
             </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class=" col-md-6 ">
+                        <label for="rutAlumno ">Rut Alumno</label>
+                        <input type="text " class="form-control " placeholder="Ingrese rut" id="rutAlumno">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="nacAlumno">Fecha de nacimiento</label>
+                        <input type="date" class="form-control" placeholder="Ingrese Nombre" id="nacAlumno" min="2000-01-01">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class=" col-md-12 ">
+                    <label for="correoAlumno ">Correo de Alumno</label>
+                    <input type="text" name="correoalumno" id="correoAlumno" class="form-control" placeholder="Ingrese correo">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class=" col-md-12 ">
+                    <label for="motivoAlumno ">Motivo de matriculación</label>
+                    <textarea name="motivo" class="form-control" id="motivoAlumno" cols="30" rows="4" placeholder="Escriba el por qué escogió este liceo"></textarea>
+                </div>
+            </div>
+            <br />
+
+            <h1 class="text-center">Datos de apoderado</h1>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="nomApoderado">Nombres Alumno</label>
+                        <input type="text" class="form-control" placeholder="Ingrese Nombre" id="nomApoderado">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="apApoderado">Apellidos Apoderado</label>
+                        <input type="text" class="form-control" placeholder="Ingrese apellidos" id="apApoderado">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class=" col-md-6 ">
+                        <label for="rutApoderado ">Rut Apoderado</label>
+                        <input type="text " class="form-control " placeholder="Ingrese rut" id="rutApoderado">
+                    </div>
+                    <div class=" col-md-6">
+                        <label for="correoApoderado ">Correo de Apoderado</label>
+                        <input type="text" name="correoapoderado" id="correoApoderado" class="form-control" placeholder="Inrese correo">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <a href="#" class="btn btn-primary btn-largo">Registrar Matrícula</a>
+            </div>
+        </div>
     </form>
 
 
     <!-- Footer -->
-    <footer class="pie-pagina bg-dark">
-        <div class="form-group">
-            <div class="pie-30">
+    <footer class="pie-pagina bg-dark ">
+        <div class="form-group ">
+            <div class="pie-30 ">
                 <p>SUSCRÍBETE PARA RECIBIR NOTICIAS</p>
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Correo electrónico" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <div class="input-group ">
+                    <input type="text " class="form-control " placeholder="Correo electrónico " aria-label="Recipient 's username" aria-describedby="button-addon2">
                     <button class="btn btn-primary" type="button" id="button-addon2">Suscribirse</button>
                 </div>
             </div>

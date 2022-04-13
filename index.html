@@ -36,7 +36,7 @@
                         <a class="nav-link nav-btn" href="#news"><span class="fa fa-newspaper"></span> Noticias</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-btn" href="#fecha"><span class="fa fa-align-left"></span> Fechas importantes</a>
+                        <a class="nav-link nav-btn" href="#fecha"><span class="fa far fa-calendar"></span> Fechas importantes</a>
                     </li>
                 </ul>
             </div>
@@ -65,6 +65,9 @@
             </div>
         </div>
     </nav>
+
+
+    <!-- Mensaje inicio -->
     <div class="container-fluid">
         <div class="container-fluid col-md-6 portada">
             <div class="container portada-msg bg-dark">
@@ -72,15 +75,14 @@
                 <p>- Un liceo para todos -</p>
             </div>
         </div>
-        <img src="img/nguyen-khanh-ly-liiusuaISP0-unsplash.jpg" alt="" class="img-inicio">
     </div>
 
-    <!-- Mensaje portada -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#EEEEEE" fill-opacity="1" d="M0,256L360,256L720,256L1080,192L1440,192L1440,320L1080,320L720,320L360,320L0,320Z"></path>
+    </svg>
 
-
-
-    <!-- Sección noticias-->
-    <div id="news" class="container-fluid car-fondo">
+    <!-- Sección Noticias -->
+    <div id="news" class="container-fluid car-fondo-claro">
         <div class="container-fluid ">
             <h1 class="news-txt "><span class="fa fa-newspaper "></span> Noticia destacada de la semana</h1>
             <div class="container ">
@@ -99,65 +101,85 @@
         </div>
     </div>
 
-    <!-- Carrusel -->
-    <div class="container-fluid col-md-8 cont-inter" id="carrusel">
-        <!-- Carousel -->
-        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <!-- Galería Carrusel -->
+    <div class="container-fluid car-fondo-oscuro">
+        <h1 class="news-txt"><span class="fa fa-images"></span> Galería</h1>
+        <div class="container-fluid col-md-8 cont-inter" id="carrusel">
+            <!-- Carousel -->
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-            <!-- Indicators/dots -->
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/Colegio.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+                        <div class="carousel-caption">
+                            <h3>Los Angeles</h3>
+                            <p>We had such a great time in LA!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/Colegio2.jpg" alt="Chicago" class="d-block" style="width:100%">
+                        <div class="carousel-caption">
+                            <h3>Chicago</h3>
+                            <p>Thank you, Chicago!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/Colegio3.jpg" alt="New York" class="d-block" style="width:100%">
+                        <div class="carousel-caption">
+                            <h3>New York</h3>
+                            <p>We love the Big Apple!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
             </div>
-
-            <!-- The slideshow/carousel -->
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/Colegio.jpg" alt="Los Angeles" class="d-block" style="width:100%">
-                    <div class="carousel-caption">
-                        <h3>Los Angeles</h3>
-                        <p>We had such a great time in LA!</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/Colegio2.jpg" alt="Chicago" class="d-block" style="width:100%">
-                    <div class="carousel-caption">
-                        <h3>Chicago</h3>
-                        <p>Thank you, Chicago!</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/Colegio3.jpg" alt="New York" class="d-block" style="width:100%">
-                    <div class="carousel-caption">
-                        <h3>New York</h3>
-                        <p>We love the Big Apple!</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Left and right controls/icons -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-    </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-    </button>
         </div>
     </div>
 
 
-    <!-- Calendario -->
-    <div id="fecha" class="container-fluid car-fondo">
-        <div class="container col-md-6">
-            <h2 class="text-center">Fechas importantes</h2>
-            <iframe class="calendar " src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FSantiago&src=YmVycmlvcy5zZWJhc3RpYW4yMDAxQGdtYWlsLmNvbQ&src=MjcxcTB1cGZzM3BvZ29jYmRoMjRmdnNraTk5YWpkNmxAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&src=ZXMuY2wjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%238E24AA&color=%237986CB "></iframe>
+    <!-- Calendario y Director-->
+    <div id="fecha" class="container-fluid car-fondo-claro">
+        <div class="form-group">
+            <div class="cajaflex">
+                <div class="container col-md-6 justifycenter">
+                    <h2 class="text-center"><span class="fa fa-calendar"></span> Fechas importantes</h2>
+                    <div class="div">
+                        <iframe class="calendar" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FSantiago&src=YmVycmlvcy5zZWJhc3RpYW4yMDAxQGdtYWlsLmNvbQ&src=MjcxcTB1cGZzM3BvZ29jYmRoMjRmdnNraTk5YWpkNmxAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&src=ZXMuY2wjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%238E24AA&color=%237986CB "></iframe>
+                    </div>
+                </div>
+                <div class="container col-md-6 justifycenter">
+                    <img src="img/Director.jpg" alt="" class="img-director">
+                    <br>
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum adipisci distinctio alias inventore ea? Repellat, aliquam. Harum inventore corporis quos?"</p>
+                            <span>- Kün Agüero, Director de Liceo KRÜ - </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 
 
-    <!-- Contacto y mapa -->
-    <div class="container-fluid car-fondo" id="contact">
+    <!-- Contacto -->
+    <div class="container-fluid car-fondo-oscuro justifycenter">
         <br>
         <div class="container-fluid container-md">
             <div class="row ">
@@ -221,19 +243,6 @@
                     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 
                 </div>
-                <div class="container col-md-6 ">
-                    <br /><br /><br />
-                    <div class="cont-mapa">
-                        <br><br>
-                        <div class="card ">
-                            <div class="card-body text-center">
-                                <h5><span class="fa fa-location-dot "></span>&nbspCalle Álvarez con Lusitania</h5>
-                                <h5><span class="fa fa-phone "></span>&nbsp+568 9856 2145</h5>
-                                <h5><span class="fa fa-envelope "></span>&nbspliceo.pretson@pretson.cl</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
         <br>
@@ -263,10 +272,6 @@
         </div>
 
     </footer>
-
-
 </body>
-
-
 
 </html>
