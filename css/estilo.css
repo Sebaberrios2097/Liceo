@@ -5,12 +5,18 @@ body {
     background-size: cover;
 }
 
+.img-inicio {
+    width: 100%;
+    background-image: url(../img/nguyen-khanh-ly-liiusuaISP0-unsplash.jpg);
+    clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    background-color: #fff;
+}
+
 .portada {
     opacity: 90%;
     border-radius: 3%;
     text-align: center;
     margin-top: 150px;
-    margin-bottom: 150px;
     color: #fff;
 }
 
@@ -18,8 +24,13 @@ body {
     padding: 50px;
 }
 
-.car-fondo {
-    background: #fff1e6;
+.car-fondo-claro {
+    background: #EEEEEE;
+    padding: 20px 0px;
+}
+
+.car-fondo-oscuro {
+    background: #dadada;
     padding: 20px 0px;
 }
 
@@ -130,10 +141,26 @@ body {
 }
 
 .calendar {
-    width: 800px;
-    height: 587px;
-    margin-left: -40px;
-    margin-top: 20px
+    width: 35rem;
+    height: 30rem;
+}
+
+.img-director {
+    width: 13rem;
+    height: 13rem;
+    border-radius: 71%;
+}
+
+.justifycenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cajaflex {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .formulario {
@@ -228,7 +255,7 @@ body {
 }
 
 .formulario__btn:hover {
-    box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+    box-shadow: 3px 0px 30px #a3a3a3;
 }
 
 .formulario__mensaje-exito {
@@ -288,11 +315,17 @@ body {
     padding: 20px;
 }
 
-.cont-mapa {
+.cont-forms {
+    background-color: #343638;
+    color: #fff;
+    padding: 25px;
+    margin-top: 13rem;
+    margin-bottom: 13rem;
     border-radius: 5%;
-    background-color: #DFDFDE;
-    height: 35em;
-    margin-top: -70px;
+}
+
+.btn-largo {
+    display: block;
 }
 
 
@@ -332,8 +365,7 @@ body {
 
 @media(max-width: 500px) {
     .calendar {
-        width: 355px;
-        height: 425px;
+        height: 400px;
     }
     .imagen-noticia {
         margin-left: 0px;
@@ -354,9 +386,8 @@ body {
 
 @media(max-width: 376px) {
     .calendar {
-        width: 355px;
+        width: 340px;
         height: 425px;
-        margin-left: -25px;
     }
     .imagen-noticia {
         margin-left: 0px;
@@ -386,5 +417,11 @@ body {
         background: none;
         border: none;
         margin-left: 15px;
+    }
+    .justifycenter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 }
