@@ -1,8 +1,15 @@
-body {
+/* body {
     background-image: url(../img/nguyen-khanh-ly-liiusuaISP0-unsplash.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+} */
+
+.img-inicio {
+    width: 100%;
+    background-image: url(../img/nguyen-khanh-ly-liiusuaISP0-unsplash.jpg);
+    clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    background-color: #fff;
 }
 
 .portada {
@@ -228,7 +235,7 @@ body {
 }
 
 .formulario__btn:hover {
-    box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+    box-shadow: 3px 0px 30px #a3a3a3;
 }
 
 .formulario__mensaje-exito {
@@ -294,14 +301,17 @@ body {
     height: 35em;
     margin-top: -70px;
 }
-.inicio-sesion{
+
+.inicio-sesion {
     background-color: #343638;
     color: #fff;
-    padding: 20px;
-    margin-top: 15rem;
-    margin-bottom: 15rem;
+    padding: 25px;
+    margin-top: 13rem;
+    margin-bottom: 13rem;
+    border-radius: 5%;
 }
-.btn-inicio-sesion{
+
+.btn-largo {
     display: block;
 }
 
