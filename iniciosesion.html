@@ -64,19 +64,21 @@
     </nav>
 
     <!-- Formulario -->
-    <form action="">
+    <form action="" id="frmDatos">
         <div class="container cont-forms col-md-4">
             <h2 class="text-center">Iniciar Sesión</h2>
             <div class="form-group">
                 <label for="nameInicio">Nombre de usuario: </label>
                 <input type="text" class="form-control" id="nameInicio">
+                <span class="error" id="errorNombre">El campo nombre debe tener mínimo 3 caracteres y no puede ir vacío</span>
             </div>
             <div class="form-group">
                 <label for="contraInicio">Contraseña: </label>
                 <input type="password" class="form-control" id="contraInicio">
+                <span class="error" id="errorContra">Debe introducir una contraseña válida</span>
             </div>
             <div class="form-group">
-                <a href="#" class="btn btn-primary btn-largo">Iniciar Sesión</a>
+                <input type="button" class="btn btn-primary btn-largo" value="Iniciar Sesión" id="iniSesion">
             </div>
             <div class="form-group">
                 <p class="text-center">¿No está registrado?</p>
@@ -86,6 +88,10 @@
 
 
     </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <script src="js/validadoresP.js"></script>
 
     <!--Footer -->
     <footer class="pie-pagina bg-dark ">
