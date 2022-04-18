@@ -26,7 +26,7 @@ $(document).ready(function() {
 let expr = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 
 $(document).ready(function() {
-    $('#formRegistro').submit(function() {
+    $('#registrarse').click(function() {
         let nombre = $('#nameRegistro').val();
         let apellido = $('#apRegistro').val();
         let correo = $('#correoRegistro').val();
