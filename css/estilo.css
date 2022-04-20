@@ -125,9 +125,8 @@ body {
 }
 
 .imagen-noticia {
-    margin-left: 285px;
-    margin-bottom: 10px;
-    border-radius: 10%;
+    width: 40rem;
+    border-radius: 10px;
 }
 
 .news-txt {
@@ -194,7 +193,7 @@ body {
 .formulario__input:focus {
     border: 3px solid #0075FF;
     outline: none;
-    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+    box-shadow: 3px 0px 30px #a3a3a366;
 }
 
 .formulario__input-error {
@@ -326,6 +325,45 @@ body {
 
 .btn-largo {
     display: block;
+    width: inherit;
+}
+
+.error {
+    display: flex;
+    justify-content: center;
+    background-color: #F55353;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-noticias {
+    text-decoration: none;
+    color: #000;
+}
+
+.fondo-btn-noticias {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.btn-noticias:hover {
+    text-decoration: none;
+    color: #000;
+    transition: 0.5s;
+}
+
+.fondo-btn-noticias:hover {
+    background-color: rgb(212, 212, 212);
+    border-radius: 10px;
+    padding: 5px;
+    transition: 0.5s;
 }
 
 
