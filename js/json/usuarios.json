@@ -1,0 +1,16 @@
+{
+    "usuarios": {
+        "usuario": [{
+                "nombre": "agamematsu",
+                "contra": "hola123"
+
+            },
+            {
+                "nombre": "RenegaiWarmoon",
+                "contra": "hola123"
+
+            }
+
+        ]
+    }
+}

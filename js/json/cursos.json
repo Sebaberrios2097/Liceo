@@ -1,0 +1,118 @@
+{
+    "cursos": {
+        "curso": [{
+                "nivel": "1",
+                "letra": "A",
+                "profesor": "Luis Francisco Velez",
+                "paradocente": "María Dolores Anglada Porras"
+
+            },
+            {
+                "nivel": "1",
+                "letra": "B",
+                "profesor": "Juan Pérez",
+                "paradocente": "María Dolores Anglada Porras"
+
+            },
+            {
+                "nivel": "1",
+                "letra": "C",
+                "profesor": "Albina Urrutia Fiol",
+                "paradocente": "María Dolores Anglada Porras"
+
+            },
+            {
+                "nivel": "1",
+                "letra": "D",
+                "profesor": "Piedad Vilaplana-Martínez",
+                "paradocente": "María Dolores Anglada Porras"
+
+            },
+            {
+                "nivel": "2",
+                "letra": "A",
+                "profesor": "Ximena del Cuadrado",
+                "paradocente": "Fernanda Castilla Pina"
+
+            },
+            {
+                "nivel": "2",
+                "letra": "B",
+                "profesor": "Josefina Tomás",
+                "paradocente": "Fernanda Castilla Pina"
+
+            },
+            {
+                "nivel": "2",
+                "letra": "C",
+                "profesor": "Amador Gallo-Grau",
+                "paradocente": "Fernanda Castilla Pina"
+
+            },
+            {
+                "nivel": "2",
+                "letra": "D",
+                "profesor": "Che Velázquez Ocaña",
+                "paradocente": "Fernanda Castilla Pina"
+
+            },
+            {
+                "nivel": "3",
+                "letra": "A",
+                "profesor": "Zaida Porta",
+                "paradocente": "Graciela Neira Canales"
+
+            },
+            {
+                "nivel": "3",
+                "letra": "B",
+                "profesor": "Fidel Galiano Belmonte",
+                "paradocente": "Graciela Neira Canales"
+
+            },
+            {
+                "nivel": "3",
+                "letra": "C",
+                "profesor": "Elena de Collado",
+                "paradocente": "Graciela Neira Canales"
+
+            },
+            {
+                "nivel": "3",
+                "letra": "D",
+                "profesor": "Carlito Salvà Ariza",
+                "paradocente": "Graciela Neira Canales"
+
+            },
+            {
+                "nivel": "4",
+                "letra": "A",
+                "profesor": "Eligio Huertas Borja",
+                "paradocente": "Marc Priego Cáceres"
+
+            },
+            {
+                "nivel": "4",
+                "letra": "B",
+                "profesor": "Alonso Vilanova Blanch",
+                "paradocente": "Marc Priego Cáceres"
+
+            },
+            {
+                "nivel": "4",
+                "letra": "C",
+                "profesor": "Simón Villa",
+                "paradocente": "Marc Priego Cáceres"
+
+            },
+            {
+                "nivel": "4",
+                "letra": "D",
+                "profesor": "Omar Mesa-Sabater",
+                "paradocente": "Marc Priego Cáceres"
+
+            }
+
+        ]
+    }
+}
