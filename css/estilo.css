@@ -366,6 +366,14 @@ body {
     transition: 0.5s;
 }
 
+.tbl-column-width {
+    width: 7%;
+}
+
+input.error {
+    background-color: #fff;
+}
+
 
 /* Mediaqueris */
 

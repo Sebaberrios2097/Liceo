@@ -51,7 +51,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link nav-btn dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="fa fa-people-group"></span> Sobre nosotros</a>
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Misión y Visión</a></li>
+                            <li><a class="dropdown-item" href="cursos.html">Cursos 2022</a></li>
                             <li><a class="dropdown-item" href="#">Reglamento Escolar</a></li>
                         </ul>
                     </li>
@@ -67,22 +67,18 @@
     </nav>
 
     <!-- Formulario -->
-    <form action="#" id="formRegistro">
+    <form id="formRegistro">
         <div class="container cont-forms col-md-5">
             <h2 class="text-center">Registrarse</h2>
             <div class="form-group">
                 <div class="row">
                     <div class="col-6">
                         <label for="namesRegistro">Nombres</label>
-                        <input type="text" class="form-control" id="nameRegistro" placeholder="Ingrese nombre">
-                        <span class="error" id="errorNomRegVacio">Por favor, introduzca nombre</span>
-                        <span class="error" id="errorNomRegIncompleto">El nombre debe tener más de 3 caracteres</span>
+                        <input type="text" class="form-control" name="namesRegistro" id="nameRegistro" placeholder="Ingrese nombre" minlength="3" required>
                     </div>
                     <div class="col-6">
                         <label for="apRegistro">Apellidos</label>
-                        <input type="text" class="form-control is" id="apRegistro" placeholder="Ingrese apellidos">
-                        <span class="error" id="errorApRegVacio">Por favor, introduzca apellidos</span>
-                        <span class="error" id="errorApRegIncompleto">El apellido debe tener minimo 3 carateres</span>
+                        <input type="text" class="form-control is" name="apRegistro" id="apRegistro" placeholder="Ingrese apellidos" minlength="3" required>
                     </div>
                 </div>
             </div>
@@ -90,14 +86,11 @@
                 <div class="row">
                     <div class="col-6">
                         <label for="correoRegistro">Correo</label>
-                        <input type="text" class="form-control" id="correoRegistro" placeholder="Ingrese correo">
-                        <span class="error" id="errorCorRegVacio">Por favor, ingrese un correo</span>
-                        <span class="error" id="errorCorRegIncorrecto">Introduzca un correo válido</span>
+                        <input type="text" class="form-control" name="correoRegistro" id="correoRegistro" placeholder="Ingrese correo" required>
                     </div>
                     <div class="col-6">
                         <label for="nacRegistro">Fecha de nacimiento</label>
-                        <input type="date" class="form-control" id="nacRegistro">
-                        <span class="error" id="errorNoFecha">Introduzca una fecha</span>
+                        <input type="date" class="form-control" name="nacRegistro" id="nacRegistro" required>
                     </div>
                 </div>
             </div>
@@ -105,50 +98,56 @@
                 <div class="row">
                     <div class="col-6">
                         <label for="contra1Registro">Contraseña</label>
-                        <input type="password" class="form-control" id="contra1Registro">
-                        <span class="error" id="errorContraVacio">Por favor, introduzca una contraseña</span>
-                        <span class="error" id="errorContraLargo">La contraseña debe ser de mínimo 8 caracteres</span>
+                        <input type="password" class="form-control" name="contra1Registro" id="contra1Registro" required>
                     </div>
                     <div class="col-6">
                         <label for="contra2Registro">Repetir contraseña</label>
-                        <input type="password" class="form-control" id="contra2Registro">
-                        <span class="error" id="errorContraNoIgual">Las contraseñas no coinciden</span>
+                        <input type="password" class="form-control" name="contra2Registro" id="contra2Registro" required>
                     </div>
                 </div>
             </div>
             <div class="form-group">
-                <input type="button" class="btn btn-primary btn-largo" value="Registrarse" id="registrarse">
+                <div class="d-grid gap-2">
+                    <button type="Submit" class="btn btn-primary btn-block LnkEnviar" id="btnRegistro">Registrarse</button>
+                </div>
             </div>
         </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
         <script src="js/validadoresP.js"></script>
-    </form>
+        <script src="js/registrar.js"></script>
 
-    <!--Footer -->
-    <footer class="pie-pagina bg-dark ">
-        <div class="form-group ">
-            <div class="pie-30 ">
-                <p>SUSCRÍBETE PARA RECIBIR NOTICIAS</p>
-                <div class="input-group ">
-                    <input type="text " class="form-control " placeholder="Correo electrónico " aria-label="Recipient 's username" aria-describedby="button-addon2">
-                    <button class="btn btn-primary" type="button" id="button-addon2">Suscribirse</button>
-                </div>
-            </div>
-            <div class="pie-30 text-center">
-                <p>SÍGUENOS EN NUESTRAS REDES SOCIALES</p>
-                <a href="#" target="_blank"><i><img src="icon/facebook.png" width="40px" class="icon"></i></a>
-                <a href="#" target="_blank"><i><img src="icon/instagram.png" width="40px" class="icon"></i></a>
-                <a href="https://www.youtube.com" target="_blank"><i><img src="icon/youtube.png" width="40px"
-                            class="icon"></i></a>
-            </div>
-            <div class="pie-30">
-                &copy Sebastián y Danilo derechos reservados
-            </div>
+        <script>
+            $('#btnRegistro').click(function() {
+                JsonUserAdd();
+            });
+        </script>
         </div>
 
-    </footer>
+        <!--Footer -->
+        <footer class="pie-pagina bg-dark ">
+            <div class="form-group ">
+                <div class="pie-30 ">
+                    <p>SUSCRÍBETE PARA RECIBIR NOTICIAS</p>
+                    <div class="input-group ">
+                        <input type="text " class="form-control " placeholder="Correo electrónico " aria-label="Recipient 's username" aria-describedby="button-addon2">
+                        <button class="btn btn-primary" type="button" id="button-addon2">Suscribirse</button>
+                    </div>
+                </div>
+                <div class="pie-30 text-center">
+                    <p>SÍGUENOS EN NUESTRAS REDES SOCIALES</p>
+                    <a href="#" target="_blank"><i><img src="icon/facebook.png" width="40px" class="icon"></i></a>
+                    <a href="#" target="_blank"><i><img src="icon/instagram.png" width="40px" class="icon"></i></a>
+                    <a href="https://www.youtube.com" target="_blank"><i><img src="icon/youtube.png" width="40px"
+                            class="icon"></i></a>
+                </div>
+                <div class="pie-30">
+                    &copy Sebastián y Danilo derechos reservados
+                </div>
+            </div>
+
+        </footer>
 </body>
 
 </html>

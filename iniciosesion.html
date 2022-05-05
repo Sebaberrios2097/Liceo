@@ -51,7 +51,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link nav-btn dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="fa fa-people-group"></span> Sobre nosotros</a>
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Misión y Visión</a></li>
+                            <li><a class="dropdown-item" href="cursos.html">Cursos 2022</a></li>
                             <li><a class="dropdown-item" href="#">Reglamento Escolar</a></li>
                         </ul>
                     </li>
@@ -70,15 +70,17 @@
             <div class="form-group">
                 <label for="nameInicio">Nombre de usuario: </label>
                 <input type="text" class="form-control" id="nameInicio">
-                <span class="error" id="errorNombre">El campo nombre debe tener mínimo 3 caracteres y no puede ir vacío</span>
+                <span id="errorNombre"></span>
             </div>
             <div class="form-group">
                 <label for="contraInicio">Contraseña: </label>
                 <input type="password" class="form-control" id="contraInicio">
-                <span class="error" id="errorContra">Debe introducir una contraseña válida</span>
+                <span id="errorContra"></span>
             </div>
             <div class="form-group">
-                <input type="button" class="btn btn-primary btn-largo" value="Iniciar Sesión" id="iniSesion">
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-primary btn-block">Iniciar Sesión</button>
+                </div>
             </div>
             <div class="form-group">
                 <p class="text-center">¿No está registrado?</p>
@@ -116,6 +118,7 @@
         </div>
 
     </footer>
+    <script src="js/iniciosesion.js"></script>
 </body>
 
 </html>
