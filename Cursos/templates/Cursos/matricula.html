@@ -68,22 +68,26 @@
     </nav>
 
     <!-- Matricula -->
-    <form action="" id="form-matricula">
+    <form action="/registrarMatricula/" method="POST" id="formMatricula">{% csrf_token %}
         <div class="container cont-forms col-md-6">
             <h1 class="text-center">Matrícula</h1>
             <div class="form-group">
                 <div class="row">
                     <div class="col-md-6">
-                        <label for="nomAlumno">Nombres Alumno</label>
-                        <input type="text" class="form-control" placeholder="Ingrese Nombre" id="nomAlumno">
-                        <span class="error" id="errorNombreVacio">Por favor, ingrese nombre</span>
-                        <span class="error" id="errorNombreIncompleto">El nombre debe tener mínimo 3 caracteres</span>
+                        <label for="PnomAlumno">Primer Nombre Alumno</label>
+                        <input type="text" class="form-control" placeholder="Ingrese Nombre" name="PnomAlumno" id="PnomAlumno">
                     </div>
                     <div class="col-md-6">
-                        <label for="apAlumno">Apellidos Alumno</label>
-                        <input type="text" class="form-control" placeholder="Ingrese apellidos" id="apAlumno">
-                        <span class="error" id="errorApVacio">Por favor, ingrese apellidos</span>
-                        <span class="error" id="errorApIncompleto">El apellido debe tener minimo 3 caracteres</span>
+                        <label for="SnomAlumno">Segundo Nombre Alumno</label>
+                        <input type="text" class="form-control" placeholder="Ingrese Nombre" name="SnomAlumno" id="SnomAlumno">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="appAlumno">Apellido Paterno Alumno</label>
+                        <input type="text" class="form-control" placeholder="Ingrese apellidos" name="appAlumno" id="appAlumno">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="apmAlumno">Apellido Materno Alumno</label>
+                        <input type="text" class="form-control" placeholder="Ingrese apellidos" name="apmAlumno" id="apmAlumno">
                     </div>
                 </div>
             </div>
@@ -91,24 +95,28 @@
                 <div class="row">
                     <div class=" col-md-6 ">
                         <label for="rutAlumno ">Rut Alumno</label>
-                        <input type="text " class="form-control " placeholder="Ingrese rut" id="rutAlumno">
+                        <input type="text " class="form-control " maxlength=8 placeholder="Ingrese rut" name="rutAlumno" id="rutAlumno">
+                    </div>
+                    <div class=" col-md-6 ">
+                        <label for="dvAlumno ">Dv Alumno</label>
+                        <input type="text " class="form-control " maxlength=1 placeholder="Ingrese dv" name="dvAlumno" id="dvAlumno">
                     </div>
                     <div class="col-md-6">
                         <label for="nacAlumno">Fecha de nacimiento</label>
-                        <input type="date" class="form-control" placeholder="Ingrese Nombre" id="nacAlumno" min="2000-01-01">
+                        <input type="date" class="form-control" placeholder="Ingrese Nombre" name="nacAlumno" id="nacAlumno" min="2000-01-01">
                     </div>
                 </div>
             </div>
             <div class="form-group">
                 <div class=" col-md-12 ">
                     <label for="correoAlumno ">Correo de Alumno</label>
-                    <input type="text" name="correoalumno" id="correoAlumno" class="form-control" placeholder="Ingrese correo">
+                    <input type="text" name="correoAlumno" id="correoAlumno" class="form-control" placeholder="Ingrese correo">
                 </div>
             </div>
             <div class="form-group">
                 <div class=" col-md-12 ">
                     <label for="motivoAlumno ">Motivo de matriculación</label>
-                    <textarea name="motivo" class="form-control" id="motivoAlumno" cols="30" rows="4" placeholder="Escriba el por qué escogió este liceo"></textarea>
+                    <textarea name="motivoAlumno" class="form-control" id="motivoAlumno" cols="30" rows="4" placeholder="Escriba el por qué escogió este liceo"></textarea>
                 </div>
             </div>
             <br />
@@ -117,31 +125,32 @@
             <div class="form-group">
                 <div class="row">
                     <div class="col-md-6">
-                        <label for="nomApoderado">Nombres Alumno</label>
-                        <input type="text" class="form-control" placeholder="Ingrese Nombre" id="nomApoderado">
+                        <label for="nomApoderado">Nombres Apoderado</label>
+                        <input type="text" class="form-control" placeholder="Ingrese Nombre" name="nomApoderado" id="nomApoderado">
                     </div>
                     <div class="col-md-6">
                         <label for="apApoderado">Apellidos Apoderado</label>
-                        <input type="text" class="form-control" placeholder="Ingrese apellidos" id="apApoderado">
+                        <input type="text" class="form-control" placeholder="Ingrese apellidos" name="apApoderado" id="apApoderado">
                     </div>
                 </div>
             </div>
             <div class="form-group">
                 <div class="row">
-                    <div class=" col-md-6 ">
-                        <label for="rutApoderado ">Rut Apoderado</label>
-                        <input type="text " class="form-control " placeholder="Ingrese rut" id="rutApoderado">
-                    </div>
                     <div class=" col-md-6">
-                        <label for="correoApoderado ">Correo de Apoderado</label>
-                        <input type="text" name="correoapoderado" id="correoApoderado" class="form-control" placeholder="Inrese correo">
+                        <label for="correoApoderado">Correo de Apoderado</label>
+                        <input type="text" name="correoApoderado" id="correoApoderado" class="form-control" placeholder="Inrese correo">
                     </div>
                 </div>
             </div>
             <div class="form-group">
-                <a href="#" class="btn btn-primary btn-largo">Registrar Matrícula</a>
+                <button type="submit" class="btn btn-primary btn-largo" id="btnRegistroMatricula">Registrar Matricula</button>
             </div>
         </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+        <script src="{% static 'Cursos/js/validadorM.js'%}"></script>
+
     </form>
 
 
