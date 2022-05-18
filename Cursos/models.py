@@ -63,8 +63,16 @@ class Usuario(models.Model):
     id_alumno = models.ForeignKey(Alumno, on_delete=models.CASCADE, null=True, blank=True)
     id_profesor = models.ForeignKey(Profesor, on_delete=models.CASCADE, null=True, blank=True)
 
+    def mostrarUsuario(self):
+        return "{}".format(self.nomusuario)
+
     def __str__(self):
-        return self.nomusuario
+        return self.mostrarUsuario()
+
+    class Meta:
+        verbose_name= 'Usuario'
+        verbose_name_plural = 'Usuarios'
+        db_table = 'Usuario'
 
 class Curso(models.Model):
     id_curso = models.AutoField(primary_key=True, null=False)
@@ -73,8 +81,17 @@ class Curso(models.Model):
     letra = models.CharField(max_length=1, null=False)
     cant_alumnos = models.IntegerField(null=False)
 
+    def MostrarCurso(self):
+        return "{} {}, {}".format(self.nro_curso, self.letra, self.anno_curso)
+    
     def __str__(self):
-        return str(self.nro_curso ) + str(self.letra ) + ' ' + str(self.anno_curso)
+        return self.MostrarCurso()
+    
+    class Meta:
+        verbose_name='Curso'
+        verbose_name_plural='Cursos'
+        db_table='Curso'
+
 
 class CursoProfesor(models.Model):
     id_cursoprofesor = models.AutoField(primary_key=True, null=False)
