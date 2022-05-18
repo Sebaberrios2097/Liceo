@@ -76,16 +76,16 @@
                 <table class="table table-striped table-dark" id="cursos">
                     <thead>
                         <tr>
+                            <td class="text-center tbl-column-width">Curso</td>
                             <td class="text-center tbl-column-width">Nombre Profesor</td>
-                            <td class="text-center tbl-column-width">Correo Profesor</td>
                         </tr>
                     </thead>
 
                     <tbody>
-                            {% for prof in profesores %}
+                            {% for cur in cursoxprofesor %}
                             <tr>
-                                <td class="text-center">{{ prof.prim_nom_prof }} {{ prof.seg_nom_prof }} {{ prof.ap_pat_prof }} {{ prof.ap_mat_prof }}</td>
-                                <td class="text-center">{{ prof.correo_profesor }}</td>
+                                <td class="text-center">{{cur.id_curso}}</td>
+                                <td class="text-center">{{cur.id_profesor}}</td>
                             </tr>
                             {% endfor %}
 

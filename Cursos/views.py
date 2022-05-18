@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Alumno, Profesor
+from .models import Alumno, CursoProfesor, Suscripcion
 from django.shortcuts import render,redirect
 
 # Create your views here.
@@ -17,8 +17,8 @@ def matricula(request):
     return render(request, 'Cursos/matricula.html')
 
 def cursos(request):
-    profesores = Profesor.objects.all()
-    return render(request, "Cursos/cursos.html", {"profesores": profesores})
+    cursoxprofesor = CursoProfesor.objects.all()
+    return render(request, "Cursos/cursos.html", {"cursoxprofesor": cursoxprofesor})
 
 def registrarMatricula(request):
     Rut_Alumno=request.POST['rutAlumno']
@@ -38,4 +38,10 @@ def registrarMatricula(request):
     alumno=Alumno.objects.create(run_alumno=Rut_Alumno,dv_alumno=Dv_Alumno,prim_nom_alumno=PnomAlumno,seg_nom_alumno=SnomAlumno,
                                 ap_pat_alumno=AppAlumno,ap_mat_alumno=ApmAlumno,fec_nac_alumno=nacAlumno,correo_alumno=Email_Alumno,
                                 motivo_matricula=motivoAlumno,nombres_apoderado=nomApoderado,apellidos_apoderado=apApoderado,correo_apoderado=correoApoderado)
+    return redirect('/')
+
+def registrarSuscripcion(request):
+    correo=request.POST['correo']
+
+    suscripcion=Suscripcion.objects.create(correo=correo)
     return redirect('/')
