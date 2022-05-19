@@ -36,7 +36,7 @@ class Alumno(models.Model):
     ap_pat_alumno = models.CharField(max_length=15, null=False)
     ap_mat_alumno = models.CharField(max_length=15, null=False)
     fec_nac_alumno = models.DateField(null=False)
-    correo_alumno = models.CharField(max_length=30, null=False)
+    correo_alumno = models.CharField(max_length=50, null=False)
     motivo_matricula = models.CharField(max_length=250, null=False)
     nombres_apoderado = models.CharField(max_length=25, null=False)
     apellidos_apoderado = models.CharField(max_length=25, null=False)

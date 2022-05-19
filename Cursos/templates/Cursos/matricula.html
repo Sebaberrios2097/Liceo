@@ -70,15 +70,15 @@
     <!-- Matricula -->
     <form action="/registrarMatricula/" method="POST" id="formMatricula">{% csrf_token %}
         <div class="container cont-forms col-md-6">
-            <h1 class="text-center">Matrícula</h1>
+            <h1 class="text-center">Matrícula de Alumno</h1>
             <div class="form-group">
                 <div class="row">
                     <div class="col-md-6">
-                        <label for="PnomAlumno">Primer Nombre Alumno</label>
+                        <label for="PnomAlumno">Primer Nombre</label>
                         <input type="text" class="form-control" placeholder="Ingrese Nombre" name="PnomAlumno" id="PnomAlumno">
                     </div>
                     <div class="col-md-6">
-                        <label for="SnomAlumno">Segundo Nombre Alumno</label>
+                        <label for="SnomAlumno">Segundo Nombre</label>
                         <input type="text" class="form-control" placeholder="Ingrese Nombre" name="SnomAlumno" id="SnomAlumno">
                     </div>
                 </div>
@@ -86,35 +86,35 @@
             <div class="form-group">
                 <div class="row">
                     <div class="col-md-6">
-                        <label for="appAlumno">Apellido Paterno Alumno</label>
+                        <label for="appAlumno">Apellido Paterno</label>
                         <input type="text" class="form-control" placeholder="Ingrese apellidos" name="appAlumno" id="appAlumno">
                     </div>
                     <div class="col-md-6">
-                        <label for="apmAlumno">Apellido Materno Alumno</label>
+                        <label for="apmAlumno">Apellido Materno</label>
                         <input type="text" class="form-control" placeholder="Ingrese apellidos" name="apmAlumno" id="apmAlumno">
                     </div>
                 </div>
             </div>
             <div class="form-group">
                 <div class="row">
-                    <div class=" col-md-6 ">
-                        <label for="rutAlumno ">Rut Alumno</label>
+                    <div class=" col-md-5 ">
+                        <label for="rutAlumno ">Rut</label>
                         <input type="text " class="form-control " maxlength=8 placeholder="Ingrese rut" name="rutAlumno" id="rutAlumno">
                     </div>
-                    <div class=" col-md-6 ">
-                        <label for="dvAlumno ">Dv Alumno</label>
-                        <input type="text " class="form-control " maxlength=1 placeholder="Ingrese dv" name="dvAlumno" id="dvAlumno">
+                    <div class=" col-md-1 ">
+                        <label for="dvAlumno" class="justify-center">Dv</label>
+                        <input type="text " class="form-control text-center" maxlength=1 placeholder="DV" name="dvAlumno" id="dvAlumno">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="nacAlumno">Fecha de nacimiento</label>
+                        <input type="date" class="form-control" placeholder="Ingrese Nombre" name="nacAlumno" id="nacAlumno" min="2000-01-01">
                     </div>
                 </div>
             </div>
             <div class="form-group">
                 <div class="row">
-                    <div class="col-md-6">
-                        <label for="nacAlumno">Fecha de nacimiento</label>
-                        <input type="date" class="form-control" placeholder="Ingrese Nombre" name="nacAlumno" id="nacAlumno" min="2000-01-01">
-                    </div>
-                    <div class=" col-md-6 ">
-                        <label for="correoAlumno ">Correo de Alumno</label>
+                    <div class=" col-md-6 offset-3">
+                        <label for="correoAlumno ">Correo</label>
                         <input type="text" name="correoAlumno" id="correoAlumno" class="form-control" placeholder="Ingrese correo">
                     </div>
                 </div>
