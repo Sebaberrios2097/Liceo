@@ -35,56 +35,46 @@ jQuery.validator.addMethod('lettersonly', function(value, element) {
 
 
 $(document).ready(function() {
-    $("#formRegistro").validate({
+    $("#form_agregar_curso").validate({
         rules: {
-            namesRegistro: {
+            nro_curso: {
+                number: true,
+                required: true,
+                maxlength: 1
+            },
+            letra: {
                 lettersonly: true,
                 required: true,
-                minlength: 3
+                maxlength: 1
             },
-            apRegistro: {
-                lettersonly: true,
+            anno_curso: {
+                number: true,
                 required: true,
-                minlength: 3
+                minlength: 4,
+                maxlength: 4
             },
-            correoRegistro: {
-                required: true,
-                email: true
-            },
-            nacRegistro: {
+            cant_alumnos: {
+                number: true,
                 required: true
-            },
-            contra1Registro: {
-                required: true
-            },
-            contra2Registro: {
-                required: true,
-                equalTo: "#contra1Registro"
             },
         },
         messages: {
-            namesRegistro: {
+            nro_curso: {
                 required: "El campo no puede estar vacío",
-                minlength: "El nombre debe tener mínimo 3 caracteres"
+                maxlength: "No se permite más de 1 dígito"
             },
-            apRegistro: {
+            letra: {
                 required: "El campo no puede estar vacío",
-                minlength: "El apellido debe tener mínimo 3 caracteres"
+                maxlength: "No se permite más de una letra"
             },
-            nacRegistro: {
-                required: "Introduzca una fecha"
+            anno_curso: {
+                required: "Introduzca el año",
+                maxlength: "El año debe tener 4 dígitos",
+                minlength: "El año debe tener 4 dígitos"
             },
-            correoRegistro: {
-                required: "Ingrese correo",
-                email: "Correo inválido"
+            cant_alumnos: {
+                required: "Ingrese la cantidad de alumnos",
             },
-            contra1Registro: {
-                required: "Ingrese contraseña"
-            },
-            contra2Registro: {
-                required: "Ingrese contraseña",
-                equalTo: "Las contraseñas no coinciden"
-            }
         }
 
     });

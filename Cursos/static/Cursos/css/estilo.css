@@ -74,6 +74,10 @@ body {
     text-align: center;
 }
 
+.dark-text{
+    color: #343638;
+}
+
 .cont-inter {
     margin-top: 30px;
     margin-bottom: 30px;

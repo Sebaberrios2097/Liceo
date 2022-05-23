@@ -31,33 +31,33 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-btn" href="{% url 'matricula1'%}"><span
-                                class="fa-solid fa-align-center"></span> Matriculate</a>
+                                    class="fa-solid fa-align-center"></span> Matriculate</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-btn" href="index.html#news"><span class="fa fa-newspaper"></span> Noticias</a>
+                        <a class="nav-link nav-btn" href="#news"><span class="fa fa-newspaper"></span> Noticias</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-btn" href="index.html#fecha"><span class="fa far fa-calendar"></span> Fechas importantes</a>
+                        <a class="nav-link nav-btn" href="#fecha"><span class="fa far fa-calendar"></span> Fechas importantes</a>
                     </li>
                 </ul>
             </div>
             <div class="mx-auto order-0">
                 <img class="nav-logo" src="{% static 'Cursos/icon/iconoKRU.png'%}">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".dual-collapse2">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
             </div>
             <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item dropdown">
                         <a class="nav-link nav-btn dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="fa fa-people-group"></span> Sobre nosotros</a>
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                            <li><a class="dropdown-item" href="{% url 'cursos1'%}">Cursos 2022</a></li>
+                            <li><a class="dropdown-item" href="{% url 'cursoxprofesor'%}">Cursos 2022</a></li>
                             <li><a class="dropdown-item" href="#">Reglamento Escolar</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-btn" href="index.html#carrusel"><span class="fa fa-images"></span> Galería</a>
+                        <a class="nav-link nav-btn" href="{% url 'cursos1'%}"><span class="fa fa-images"></span>Cursos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-btn" href="{% url 'inicios1'%}"><span class="fa fa-circle-user"></span> Iniciar Sesión</a>
@@ -66,6 +66,7 @@
             </div>
         </div>
     </nav>
+
 
     <!-- Matricula -->
     <form action="/registrarMatricula/" method="POST" id="formMatricula">{% csrf_token %}
