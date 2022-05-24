@@ -140,3 +140,35 @@ class Suscripcion(models.Model):
         verbose_name="Suscripción"
         verbose_name_plural="Suscripciones"
         db_table="Suscripcion"
+
+class TipoAlmuerzo(models.Model):
+    id_tipo_almuerzo = models.AutoField(primary_key=True, blank=False, null=False)
+    nombre_tipo_almuerzo = models.CharField(max_length=100, null=False, blank=False)
+
+    def strTipoAlmuerzo(self):
+        return "{}".format(self.nombre_tipo_almuerzo)
+    
+    def __str__(self):
+        return self.strTipoAlmuerzo()
+    
+    class Meta:
+        verbose_name = "Tipo de Almuerzo"
+        verbose_name_plural = "Tipos de almuerzo"
+        db_table = "TipoAlmuerzo"
+
+class Almuerzo(models.Model):
+    id_almuerzo = models.AutoField(primary_key=True, blank=False, null=False)
+    nombre_almuerzo = models.CharField(max_length=100, null=False, blank=False)
+    descripcion_almuerzo = models.CharField(max_length=500, null=False, blank=False)
+    id_tipo_almuerzo = models.ForeignKey(TipoAlmuerzo, on_delete=models.CASCADE)
+    
+    def strAlmuerzo(self):
+        return "{}/Tipo: {}".format(self.nombre_almuerzo, self.id_tipo_almuerzo)
+
+    def __str__(self):
+        return self.strAlmuerzo()
+
+    class Meta:
+        verbose_name="Almuerzo"
+        verbose_name_plural="Almuerzos"
+        db_table="Almuerzo"
