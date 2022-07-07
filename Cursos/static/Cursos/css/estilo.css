@@ -74,6 +74,10 @@ body {
     text-align: center;
 }
 
+.dark-text{
+    color: #343638;
+}
+
 .cont-inter {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -110,6 +114,7 @@ body {
 .pie-pagina {
     background: black;
     color: #fff;
+    
 }
 
 .pie-30 {
@@ -305,6 +310,10 @@ body {
 
 .text-center {
     text-align: center;
+}
+.justify-center {
+    display: flex;
+    justify-content: center;
 }
 
 .cont-contacto {

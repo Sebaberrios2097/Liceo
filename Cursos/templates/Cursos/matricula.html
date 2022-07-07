@@ -31,33 +31,33 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-btn" href="{% url 'matricula1'%}"><span
-                                class="fa-solid fa-align-center"></span> Matriculate</a>
+                                    class="fa-solid fa-align-center"></span> Matriculate</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-btn" href="index.html#news"><span class="fa fa-newspaper"></span> Noticias</a>
+                        <a class="nav-link nav-btn" href="#news"><span class="fa fa-newspaper"></span> Noticias</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-btn" href="index.html#fecha"><span class="fa far fa-calendar"></span> Fechas importantes</a>
+                        <a class="nav-link nav-btn" href="#fecha"><span class="fa far fa-calendar"></span> Fechas importantes</a>
                     </li>
                 </ul>
             </div>
             <div class="mx-auto order-0">
                 <img class="nav-logo" src="{% static 'Cursos/icon/iconoKRU.png'%}">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".dual-collapse2">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
             </div>
             <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item dropdown">
                         <a class="nav-link nav-btn dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="fa fa-people-group"></span> Sobre nosotros</a>
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                            <li><a class="dropdown-item" href="{% url 'cursos1'%}">Cursos 2022</a></li>
+                            <li><a class="dropdown-item" href="{% url 'cursoxprofesor'%}">Cursos 2022</a></li>
                             <li><a class="dropdown-item" href="#">Reglamento Escolar</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-btn" href="index.html#carrusel"><span class="fa fa-images"></span> Galería</a>
+                        <a class="nav-link nav-btn" href="{% url 'cursos1'%}"><span class="fa fa-images"></span>Cursos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-btn" href="{% url 'inicios1'%}"><span class="fa fa-circle-user"></span> Iniciar Sesión</a>
@@ -67,39 +67,44 @@
         </div>
     </nav>
 
+
     <!-- Matricula -->
     <form action="/registrarMatricula/" method="POST" id="formMatricula">{% csrf_token %}
         <div class="container cont-forms col-md-6">
-            <h1 class="text-center">Matrícula</h1>
+            <h1 class="text-center">Matrícula de Alumno</h1>
             <div class="form-group">
                 <div class="row">
                     <div class="col-md-6">
-                        <label for="PnomAlumno">Primer Nombre Alumno</label>
+                        <label for="PnomAlumno">Primer Nombre</label>
                         <input type="text" class="form-control" placeholder="Ingrese Nombre" name="PnomAlumno" id="PnomAlumno">
                     </div>
                     <div class="col-md-6">
-                        <label for="SnomAlumno">Segundo Nombre Alumno</label>
+                        <label for="SnomAlumno">Segundo Nombre</label>
                         <input type="text" class="form-control" placeholder="Ingrese Nombre" name="SnomAlumno" id="SnomAlumno">
                     </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
                     <div class="col-md-6">
-                        <label for="appAlumno">Apellido Paterno Alumno</label>
+                        <label for="appAlumno">Apellido Paterno</label>
                         <input type="text" class="form-control" placeholder="Ingrese apellidos" name="appAlumno" id="appAlumno">
                     </div>
                     <div class="col-md-6">
-                        <label for="apmAlumno">Apellido Materno Alumno</label>
+                        <label for="apmAlumno">Apellido Materno</label>
                         <input type="text" class="form-control" placeholder="Ingrese apellidos" name="apmAlumno" id="apmAlumno">
                     </div>
                 </div>
             </div>
             <div class="form-group">
                 <div class="row">
-                    <div class=" col-md-6 ">
-                        <label for="rutAlumno ">Rut Alumno</label>
+                    <div class=" col-md-5 ">
+                        <label for="rutAlumno ">Rut</label>
                         <input type="text " class="form-control " maxlength=8 placeholder="Ingrese rut" name="rutAlumno" id="rutAlumno">
                     </div>
-                    <div class=" col-md-6 ">
-                        <label for="dvAlumno ">Dv Alumno</label>
-                        <input type="text " class="form-control " maxlength=1 placeholder="Ingrese dv" name="dvAlumno" id="dvAlumno">
+                    <div class=" col-md-1 ">
+                        <label for="dvAlumno" class="justify-center">Dv</label>
+                        <input type="text " class="form-control text-center" maxlength=1 placeholder="DV" name="dvAlumno" id="dvAlumno">
                     </div>
                     <div class="col-md-6">
                         <label for="nacAlumno">Fecha de nacimiento</label>
@@ -108,9 +113,11 @@
                 </div>
             </div>
             <div class="form-group">
-                <div class=" col-md-12 ">
-                    <label for="correoAlumno ">Correo de Alumno</label>
-                    <input type="text" name="correoAlumno" id="correoAlumno" class="form-control" placeholder="Ingrese correo">
+                <div class="row">
+                    <div class=" col-md-6 offset-3">
+                        <label for="correoAlumno ">Correo</label>
+                        <input type="text" name="correoAlumno" id="correoAlumno" class="form-control" placeholder="Ingrese correo">
+                    </div>
                 </div>
             </div>
             <div class="form-group">
@@ -136,7 +143,7 @@
             </div>
             <div class="form-group">
                 <div class="row">
-                    <div class=" col-md-6">
+                    <div class=" col-md-6 offset-3">
                         <label for="correoApoderado">Correo de Apoderado</label>
                         <input type="text" name="correoApoderado" id="correoApoderado" class="form-control" placeholder="Inrese correo">
                     </div>
