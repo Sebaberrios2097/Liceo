@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Alumno, CursoProfesor, Suscripcion, Curso
+from .models import Alumno, CursoProfesor, Suscripcion, Curso, Almuerzo
 from django.shortcuts import render,redirect
 from .forms import CursoForm
 
@@ -21,6 +21,9 @@ def registro(request):
 def matricula(request):   
     return render(request, 'Cursos/matricula.html')
 
+def Almuerzos(request):   
+    return render(request, 'Cursos/Almuerzos.html')
+
 def cursoxprofesor(request):
     cursoxprofesor = CursoProfesor.objects.all()
     return render(request, "Cursos/cursos.html", {"cursoxprofesor": cursoxprofesor})
@@ -29,6 +32,9 @@ def cursos(request):
     cursos = Curso.objects.all()
     return render(request, 'Cursos/lista_cursos.html', {'cursos': cursos})
 
+def listar_almuerzos(request):
+    Almuerzos = Almuerzo.objects.all()
+    return render(request, 'Cursos/Almuerzos.html', {'Almuerzo': Almuerzos})
 
 def registrarMatricula(request):
     Rut_Alumno=request.POST['rutAlumno']

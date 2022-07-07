@@ -6,6 +6,7 @@ from rest_framework.parsers import JSONParser
 from django.views.decorators.csrf import csrf_exempt
 from Cursos.models import Almuerzo
 from Almuerzos.serializers import AlmuerzoSerializer
+from Cursos.views import Almuerzos
 
 
 # Create your views here.
