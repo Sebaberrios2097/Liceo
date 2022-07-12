@@ -23,6 +23,9 @@ def matricula(request):
 
 def Almuerzos(request):   
     return render(request, 'Cursos/Almuerzos.html')
+    
+def Login(request):   
+    return render(request, 'Cursos/login.html')
 
 def cursoxprofesor(request):
     cursoxprofesor = CursoProfesor.objects.all()
